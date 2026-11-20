@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101010"><title>FAST FUND — Mazali lahzalar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">FF</span><span>FAST <b>FUND</b><small>FAST FOOD • DELIVERY</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish">☰</button>
+  <nav id="mainNav"><a href="#home">Bosh sahifa</a><a href="#menu">Menyu</a><a href="#about">Biz haqimizda</a><a href="#contact">Aloqa</a></nav>
+  <div class="top-actions"><button class="outline-btn" id="registerBtn">Ro‘yxatdan o‘tish</button><button class="cart-btn" id="cartOpen">🛒 <span>Savat</span><i id="cartCount">0</i></button></div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy"><span class="eyebrow">TA’MGA BOY • TEZ YETKAZISH</span><h1>Ochlikka qarshi<br><em>mazali tanlov.</em></h1><p>Sevimli fast-food taomlaringiz — yangi, mazali va tez. Buyurtmangizni hoziroq bering!</p><div class="hero-buttons"><a class="primary-btn" href="#menu">Menyuni ko‘rish <span>→</span></a><a class="text-link" href="#about">Biz haqimizda</a></div><div class="hero-stats"><div><b>20+</b><small>Taom turi</small></div><div><b>3 xil</b><small>Har taomga variant</small></div><div><b>24/7</b><small>Buyurtma qabul qilish</small></div></div></div>
+  <div class="hero-visual"><div class="hero-image" id="heroImage"></div><div class="hero-tag"><span>🔥</span><div><b>Bugungi tavsiya</b><small>Har luqmada lazzat</small></div></div><div class="hero-dots" id="heroDots"></div></div>
+</section>
+
+<section class="menu-section section-wrap" id="menu">
+  <div class="section-head"><div><span class="eyebrow">BIZNING MENYU</span><h2>Sevimli taomingizni <em>tanlang</em></h2><p>Har bir taom uchun o‘zingizga mos variantni belgilang.</p></div><div class="search-wrap"><span>⌕</span><input id="searchInput" placeholder="Taom qidirish..."></div></div>
+  <div class="filters" id="filters"><button class="filter active" data-category="Barchasi">Barchasi</button><button class="filter" data-category="Burger">Burger</button><button class="filter" data-category="Lavash">Lavash</button><button class="filter" data-category="Pitsa">Pitsa</button><button class="filter" data-category="Hot-dog">Hot-dog</button><button class="filter" data-category="Gazak">Gazak</button><button class="filter" data-category="Ichimlik">Ichimlik</button></div>
+  <div class="food-grid" id="foodGrid"></div>
+</section>
+
+<section class="promo section-wrap"><div><span class="eyebrow">FAST FUND TAVSIYA QILADI</span><h2>Kayfiyatingizga<br><em>mazali tanaffus.</em></h2><p>Yangi tayyorlangan taomlar va siz yoqtirgan ta’mlar bir joyda.</p><a class="primary-btn" href="#menu">Buyurtma berish →</a></div><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&auto=format&fit=crop" alt="Mazali burger" loading="lazy"></section>
+
+<section class="about section-wrap" id="about"><div class="about-photo"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&auto=format&fit=crop" alt="Fast food kafe muhiti" loading="lazy"><span>FAST FUND — mazali tanlov</span></div><div><span class="eyebrow">BIZ HAQIMIZDA</span><h2>Oddiy taom emas,<br><em>yoqimli lahza.</em></h2><p>FAST FUND — tez tayyorlanadigan mazali taomlarni sevuvchilar uchun yaratilgan fast-food kafe konsepsiyasi. Bizning maqsadimiz — mehmonlarimizga qulay buyurtma berish, xilma-xil menyu va yoqimli xizmat tajribasini taqdim etish.</p><p>Har bir buyurtma sizning didingizga mos tanlovlardan boshlanadi. Menyudan taomni tanlang, o‘lchamini belgilang va qulay yetkazib berish manzilini kiriting.</p><div class="about-points"><span>✓ Turli xil menyu</span><span>✓ Qulay buyurtma</span><span>✓ Zamonaviy xizmat</span></div></div></section>
+
+<section class="contact section-wrap" id="contact"><div><span class="eyebrow">BIZ BILAN BOG‘LANING</span><h2>Savolingiz bormi?</h2><p>Buyurtma va takliflar bo‘yicha biz bilan bog‘laning.</p></div><div class="contact-card"><p>☎ <b>+998 90 123 45 67</b></p><p>⌖ <span>Toshkent, O‘zbekiston</span></p><p>✉ <span>hello@fastfund.uz</span></p><small>Telefon va manzilni admin paneldan o‘zgartirish mumkin.</small></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">FF</span><span>FAST <b>FUND</b><small>FAST FOOD • DELIVERY</small></span></a><span>© 2026 FAST FUND. Barcha huquqlar himoyalangan.</span><a href="admin.html">Admin panel ↗</a></footer>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><div><span class="eyebrow">SIZNING TANLOVINGIZ</span><h3>Savat</h3></div><button class="close-btn" id="cartClose">×</button></div><div id="cartItems" class="cart-items"><div class="empty-cart">🛒<b>Savatingiz hozircha bo‘sh</b><span>Menyudan taom tanlang.</span></div></div><div class="cart-bottom"><div class="total-line"><span>Jami</span><b id="cartTotal">0 so‘m</b></div><button class="primary-btn full" id="checkoutBtn">Buyurtmani rasmiylashtirish →</button></div></aside>
+
+<div class="modal-backdrop" id="checkoutModal"><div class="modal wide-modal"><button class="close-btn modal-x" data-close="checkoutModal">×</button><span class="eyebrow">YETKAZIB BERISH</span><h2>Buyurtma ma’lumotlari</h2><form id="checkoutForm"><div class="form-grid"><label>Ismingiz<input required name="name" placeholder="Ism familiya"></label><label>Telefon raqamingiz<input required name="phone" type="tel" placeholder="+998 90 123 45 67"></label><label>Viloyat<select required id="regionSelect" name="region"><option value="">Viloyatni tanlang</option></select></label><label>Tuman / shahar<select required id="districtSelect" name="district" disabled><option value="">Avval viloyatni tanlang</option></select></label></div><div class="address-tabs"><button type="button" class="address-tab active" data-address="manual">✎ Manzilni qo‘lda kiritish</button><button type="button" class="address-tab" data-address="map">⌖ Google Maps orqali</button></div><div id="manualAddress"><label>To‘liq manzil<textarea required name="address" rows="3" placeholder="Ko‘cha, uy, mo‘ljal..."></textarea></label></div><div id="mapAddress" class="hidden"><p class="hint">Google Maps xaritasida manzilingizni toping va havolasini quyidagi maydonga joylang.</p><a class="map-link" href="https://www.google.com/maps" target="_blank" rel="noopener">Google Maps'ni ochish ↗</a><label>Xarita havolasi<input name="mapUrl" type="url" placeholder="https://maps.google.com/..."></label><label>Qo‘shimcha mo‘ljal<textarea name="mapNote" rows="2" placeholder="Uy yoki bino haqida izoh"></textarea></label></div><label>Qo‘shimcha izoh (ixtiyoriy)<textarea name="note" rows="2" placeholder="Buyurtma bo‘yicha izoh..."></textarea></label><div class="checkout-summary" id="checkoutSummary"></div><button class="primary-btn full" type="submit">Buyurtmani yuborish →</button><p class="form-note">Demo rejim: buyurtma ushbu qurilmada saqlanadi. Haqiqiy qabul qilish uchun backend ulash kerak.</p></form></div></div>
+
+<div class="modal-backdrop" id="registerModal"><div class="modal"><button class="close-btn modal-x" data-close="registerModal">×</button><span class="eyebrow">FAST FUND</span><h2>Ro‘yxatdan o‘tish</h2><form id="registerForm"><label>Ismingiz<input name="regName" required placeholder="Ismingiz"></label><label>Telefon raqamingiz<input name="regPhone" required type="tel" placeholder="+998..."></label><button class="primary-btn full">Ro‘yxatdan o‘tish</button></form><p class="form-note">Ma’lumotlar demo sifatida ushbu brauzerda saqlanadi.</p></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
